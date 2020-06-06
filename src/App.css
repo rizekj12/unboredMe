@@ -230,6 +230,11 @@ select{
 
 @media (max-width: 870px){
 
+  .panda{
+    height: 100px;
+    width: 100px;
+  }
+
   .clickBox{
     height:125px;
     width:125px;
@@ -264,8 +269,8 @@ select{
 
   .featured{
     margin: 30px auto;
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
   }
   .randomBox{
     margin: 10px;
@@ -278,7 +283,7 @@ select{
  
 }
 
-@media(width: 580px){
+@media(max-width: 580px){
 
 
   .clickBox{
@@ -326,6 +331,22 @@ select{
   .secondPage{
     height: 100%;
     width: 100%;
+  }
+
+  .middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .clickBox{
+    display:flex;
+    justify-content: space-between;
+    margin: 15px auto;
+
   }
 
 
