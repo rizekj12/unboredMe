@@ -38,7 +38,7 @@ export default class App extends Component {
 
   handleChange = async (e) => {
     let typeV = e.target.value
-    const response2 = await axios.get(`http://www.boredapi.com/api/activity?type=${e.target.value}`)
+    const response2 = await axios.get(`https://www.boredapi.com/api/activity?type=${e.target.value}`)
     this.setState({
 
       typeActivity: response2.data.activity,
@@ -49,7 +49,7 @@ export default class App extends Component {
 
   handleChange2 = async (e) => {
     let typeP = e.target.value
-    const response3 = await axios.get(`http://www.boredapi.com/api/activity?participants=${e.target.value}`)
+    const response3 = await axios.get(`https://www.boredapi.com/api/activity?participants=${e.target.value}`)
     this.setState({
 
       participants: response3.data.activity,
