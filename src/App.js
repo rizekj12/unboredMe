@@ -66,7 +66,7 @@ export default class App extends Component {
   }
 
   getRandom = async () =>{
-    const response = await axios.get('http://www.boredapi.com/api/activity/')
+    const response = await axios.get('https://www.boredapi.com/api/activity/')
 
     this.setState({
       activityMain: response.data.activity,
